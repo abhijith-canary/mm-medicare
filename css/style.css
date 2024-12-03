@@ -1,0 +1,687 @@
+.btn { font-weight: 500; transition: .5s; }
+
+.btn-square { width: 38px; height: 38px; }
+
+.btn-sm-square { width: 32px; height: 32px; }
+
+.btn-lg-square { width: 48px; height: 48px; }
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+} 
+
+/* ---------------------------- Navbar Start---------------------------- */
+
+.navbar {
+    padding: 11px 0 !important;
+    height: 75px;
+    top: 0;
+    width: 100%;
+    background-color: #f0fbfc ;
+    position: fixed;
+    z-index: 5;
+    opacity: 100%; 
+    box-shadow: 1px 2px 26px 1px rgba(224, 221, 221, 0.541); 
+}
+.navbar .nav-item .nav-link {
+    margin-right: 35px;
+    padding: 15px 0;
+    color: #3d3b3b;
+    outline: none;
+    font-weight: 600;
+    font-family: "Inter", sans-serif; 
+    font-size: 16px;  
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {  color: #32B3A7; }
+
+.navbar-btn{
+    border: 1px solid #32B3A7;
+    border-radius: 10px; 
+    background-color: #f5f8fc;
+    background-image: linear-gradient(60deg,#1885F2, #01E193);
+    background-clip: text;
+    color: transparent; 
+    font-weight: 600; 
+    padding: 15px 20px;
+} 
+.navbar-btn-div{ margin-top: 15px; }
+
+.navbar-btn:hover{ color: transparent; } .navbar-btn img{ margin-top: -3px;}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 22px;
+    height: 2px;
+    background-color: rgb(103, 197, 169);
+    margin: 2px 0;
+    transition: 0.3s;
+}
+.hamburger.open .line1 { transform: rotate(45deg) translate(4px, 4px); }
+
+.hamburger.open .line2 { opacity: 0; }
+
+.hamburger.open .line3 { transform: rotate(-45deg) translate(5px, -5px); } 
+
+#navLinks { display: flex; flex-direction: row; }  
+ 
+@media (max-width: 991.98px) {  
+
+    .navbar .nav-item { padding: 0 15px; width: 100%; }
+    
+    .navbar .nav-item .nav-link  { margin-right: 0; padding: 10px 0; }
+
+    .hamburger { display: flex; margin-left: auto; padding-right: 10px;}
+
+    #navLinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f0fbfc;
+        margin-top: 15px;  
+    }
+    #navLinks.active { display: flex; }
+
+    .navbar {border-bottom: 1px solid rgba(209, 196, 196, 0.274); } .logo-img{ width: 220px;}
+
+    .navbar-btn-div{ padding : 0 0px 20px 15px; }
+
+    .navbar-btn{ font-size: 15px; padding: 8px 5px; }
+}
+
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid rgba(255, 255, 255, 0.863);
+    border-radius: 40px;
+    transition: .3s;
+}
+.footer .btn.btn-social:hover { transform: scale(1.1);}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+/*------------------- Home Section Styling Start --------------------- */
+
+.home-content{ padding: 270px 5px 60px;}
+
+.home-img-div{ padding: 100px 0 0px;}
+
+.home-image{
+    width: 750px;
+    height: 700px; 
+    margin-top:  0px;
+    margin-left: -50px;
+}
+.home-content h3{
+    font-size: 26px;
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-weight: 700;
+}
+.home-content h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    color: black;
+    line-height: 76px;
+    width: auto;  
+}
+.home-content p{
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: #6e83a5; 
+    width: 100%;
+    max-width: 500px;
+}
+.home-btn{
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #32B3A7, #F8C6A1);
+    border: 1px solid white;
+    color: white;
+    border-radius: 7px;
+    padding: 12px 25px;
+    font-size: 14px;
+}
+.home-layer{ background-image: linear-gradient(to right,#32B3A7 , #F2BF99); }
+
+.home-layer-content{ padding: 0 3px; } .home-layer-div{ padding: 70px 0; }
+
+.home-layer-div2{ padding-top: 20px; } .star{ padding-left: 150px;} .health{padding-left: 70px;}
+
+.home-layer-img{ width: auto; height: 100%;}
+
+.home-layer-content h5{
+    font-size: 41px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.home-layer-content p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: -18px;
+}
+
+/* --------------------------- About Us Page Start --------------------------- */
+
+.about-container{ padding: 150px 0 200px; position: relative;}
+
+.about-img-div, .mission-img-div, .facility-img-div { position: relative; }
+
+.about-img{ width: 430px; height: 550px; }
+
+.about-img-div::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 260px;
+    top: 350px;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    background: url(../media/about-img1.png) top left no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 10px 1px 100px 1px #9ab9ae49; 
+}
+.about-us-content h6{
+    color: #1B1B1B;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.about-us-content h6 span{ padding-left: 10px;}
+.about-us-content h1{
+    color: #1B1B1B;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.about-us-content p{ 
+    color: #7487A5;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    padding-right: 5px;
+}
+.learnMore-btn {
+    background-color: rgb(255, 255, 255);
+    color: #32B3A7;
+    border: 1px solid #32B3A7;
+    border-radius: 10px; 
+    padding: 10px 30px;
+    font-family: "Inter", sans-serif;
+}
+
+/****************** ABOUTUS MODAL START ******************/
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;  
+    left: 0;
+    top: 0;
+    width: 100%;  
+    height: 100%;  
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);  
+}
+
+.modal-content {
+    background-color: #fefefe;
+    color: #7487A5;
+    margin: auto; 
+    padding: 50px 60px;  
+    border: 1px solid #888;
+    width: 50%;
+}
+#modalsentence{ font-family: "Inter", sans-serif; font-size: 16px;} 
+
+.close {
+    position: absolute;
+    right: 20px;
+    color: gray;
+    font-size: 28px;
+    font-weight: 100; 
+    margin-top: -30px;
+}
+.close:hover, .close:focus {
+    color: #32B3A7;
+    text-decoration: none;
+    cursor: pointer;
+}
+.about-title-img{
+    position: absolute;
+    width: auto;
+    max-width: 880px;
+    top: 100px;
+    right: 70px;
+}
+
+.our-mission-container{ padding: 160px 0px 140px;}
+
+.mission-learnMore-btn{
+    font-family: "Inter", sans-serif;
+    background-color: #32B3A7;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-family: "Inter", sans-serif;
+} 
+
+.our-mission-img{ position: relative; width: 440px; height: 530px; float: right; }
+
+.mission-img-div::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 260px;
+    top: -60px;
+    left: 80px;
+    background: url(../media/about-img2.png) top left no-repeat;
+    background-size: contain;
+}
+
+/* --------------------------- Department Page Start --------------------------- */
+.department-container{ position: relative; padding: 130px 0px; }
+
+.department-contents { max-width: 880px;}
+
+.department-contents h1{  
+    color: #1B1B1B;
+    font-size: 35px;
+    font-weight: 400; 
+}
+.department-contents p { 
+    color: #7487A5;
+    font-size: 20px;
+    font-family: "Inter", sans-serif; 
+    max-width: 850px;
+    padding: 10px 0;
+}
+.department-item {
+    position: relative;
+    padding: 20px 20px;
+    background: #ebf8f5;
+    transition: .5s;
+    height: 260px;
+}
+.department-item h4{
+    font-family: "Inter", sans-serif; 
+    color: black;
+    font-weight:600;
+    font-size: 20px;
+    padding-top: 35px;
+}
+.department-item p{  
+    font-size: 15px;
+    font-family: "Inter", sans-serif; 
+    color: #475467;
+    font-weight: 400; 
+}
+.paediatrics{ position: absolute; top: 120px;right: -5px; }
+
+/* --------------------------- Facility Page Start --------------------------- */
+
+.facility-container{ padding: 130px 0;}
+
+.Facility-content h1{
+    color: white;
+    font-size: 35px;
+    font-weight: 400; 
+}
+.Facility-content p{
+    color: white;
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    width: auto; 
+    max-width: 910px;
+}
+.facility-main{ padding-top: 90px; } 
+
+.facility-img{ width: 430px; height: 520px; }
+
+.facility-img-div::after {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 240px;
+    top: -50px; 
+    right: 80px; 
+    background: url(../media/facilty_img2.png) top left no-repeat;
+    background-size: contain;
+}
+.facilty-right-content { padding-top: 40px;}
+
+#labelfaci {
+    padding-left: 20px;
+    padding-top: 14px;
+    height: 50px;
+    width: 100%;
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: rgb(63, 58, 58);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.753) 40%, rgba(255, 255, 255, 0.295) 90%);
+}
+#labelfaci2 {
+    padding-left: 20px;
+    padding-top: 14px;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: rgb(63, 58, 58);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.753) 40%, rgba(255, 255, 255, 0.295) 90%);
+}
+#labelfaci3 {
+    padding-left: 20px;
+    padding-top: 14px;
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: rgb(63, 58, 58);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.753) 40%, rgba(255, 255, 255, 0.295) 90%);
+}
+#faci3{ font-size: 14px; opacity: 90%; font-family: "Inter", sans-serif; }
+
+#faci3_1{
+    margin-top: -10px;
+    font-size: 14px;
+    opacity: 90%;
+    font-family: "Inter", sans-serif; 
+}
+#labelfaci4 {
+    padding-left: 20px;
+    padding-top: 13px;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: rgb(63, 58, 58);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.753) 40%, rgba(255, 255, 255, 0.295) 90%);
+}
+#labelfaci5 {
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 10px;
+    height: 76px;
+    width: 100%;
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    border-radius: 10px;
+    color: rgb(63, 58, 58);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.753) 40%, rgba(255, 255, 255, 0.295) 90%); 
+}
+#labelfaci6 {
+    padding-left: 20px;
+    padding-top: 13px;
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: rgb(63, 58, 58);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.753) 40%, rgba(255, 255, 255, 0.295) 90%);
+}
+#labelfaci7 {
+    padding-left: 20px;
+    padding-top: 13px;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    max-width: 650px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: rgb(63, 58, 58);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.753) 40%, rgba(255, 255, 255, 0.295) 90%);
+}
+/* --------------------------- Health Package Start --------------------------- */
+
+.healthcare-container{ padding: 150px 0 300px; } .healthpack { padding-top: 100px;}
+
+.healthpack h1{ 
+    padding-left: 15px;
+    color: #101828;
+    font-size: 35px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+.healthpack h5{
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 10px;
+}
+.healthpack p{ 
+    font-size: 18px;
+    font-family: "Inter", sans-serif;  
+    color: #7487A5;
+    padding-top: 10px;
+}
+.hover-section{ padding: 200px 120px; }
+
+.senior-citizen p {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: white;
+    width: 170px;
+    left: 35px;
+    bottom: 140px;
+    text-align: center;
+}
+.hover-content p {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+    text-align: center; 
+} 
+.hover-content{  height: 200px; }
+
+.senior-citizen { width: 0; position: absolute; margin-top: -249px; } 
+.citizen-diabetes { margin-top: -248px;} .home-cardiac-cancer{ margin-top: -249px; }
+.center-hover { width: 235px; height: 245px; }
+
+.senior-citizen img {
+    width: 235px; 
+    height: 245px; 
+    margin-top: 48px;
+}
+.hover-div img{ 
+    object-fit: cover;
+    transition: 0.4s;
+    clip-path: polygon( 50% 0%, 100% 27%, 100% 73%, 50% 100%, 0% 72%, 0% 27% ); 
+}
+
+.hover-div .senior-citizen:hover{ opacity: 0; cursor: pointer; }
+
+.citizen-health-text{ width: 150px; left: 40px; top: -150px; }
+.home-collection-text{ width: 200px; top: -178px; left: 17px; }
+.women-health-text , .special-health-text{ width: 190px; left: 20px; top: -160px; }
+.cardiac-care-text{ width: 190px; left: 20px; top: -175px; }
+.diabetes-management-text{ width: 190px; left: 23px; top: -150px; }
+.cancer-marker-text{ width: 190px; left: 23px; top: -170px; }
+
+.hover-div{ position: absolute; }
+.citizen-health{ margin-left: 80px; }
+.home-collection{ margin-left: 300px; }
+.women-health{  margin-left: -140px; }
+.cardiac-care{ margin-left: -30px; margin-top: -190px; } 
+.diabetes-management{ margin-left: 190px; margin-top: -190px;}
+.special-health{ margin-left: -30px; margin-top: 190px; }
+.cancer-marker{ margin-left: 190px; margin-top: 190px; }
+
+/*------------------- Highlight Section Start -------------------*/
+
+.highlight-container{ padding: 140px 5px; }
+
+.service-header h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #101828;
+}
+.highlight-items{ padding: 20px; height: 180px; background-color: #ffffff; border-radius: 0px 0px 10px 10px;} 
+
+/* .highlight-box-div{ padding-top: 30px;} */
+
+.highlight-items h4{
+    color: #101828;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+}
+.highlight-items p {
+    line-height: 20px;
+    color: #475467;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+.highlight-box{ padding-top: 30px;}
+
+/*------------------- Contact Us Page Start -------------------*/
+.contact-section{ 
+    background: url(../media/contactimg.png) top center no-repeat;
+    background-size: cover;
+    text-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    padding: 150px 0px;
+}
+.contact-section h3{
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.contact-section h1{ 
+    color: white; 
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif; 
+    letter-spacing: .5px;
+    width: auto;
+    max-width: 500px;
+    padding-top: 10px;
+}
+.contact-section p{
+    width: auto;
+    max-width: 600px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;   
+    color: white; 
+    padding-top: 10px;
+}
+.contactbtn-div{ padding-top: 30px;}
+
+.contact-btn{
+    background-color: #32B3A7;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px; 
+    letter-spacing: .5px;
+    padding: 15px 24px;
+    font-size: 16px
+}
+.contact-btn:hover{ color: white; }
+
+.footer{ background-color: #1A1A22; } .footer-container{ padding: 130px 0 50px; }
+
+.footer-section h6, .footer-section2 h6, .footer-section3 h6{ 
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400; 
+    color: #FFFFFF;
+    opacity: 75%;
+} 
+.footer-section p, .footer-section2 p{ padding-top: 5px; } .footer-section3{ padding-top: 18px; margin-left: -100px;} 
+ 
+.footer-section2 .img1, .footer-section3 .img2{ padding-left: 20px;} 
+.footer-section2 .img2, .footer-section3 .img1{ padding-left: 50px;}
+.footer-section2 .img3{ padding-left: 55px;}
+.footer-section2 hr { width: 300px; }
+
+.footer-span{ padding-left: 5px; } .span1{ color: #32B3A7;} .span2{ padding-left: 2px;}
+
+.footer-section4{ margin-left: 100px;}
+
+.footer .company-menu{
+    padding-top: 10px;
+    text-decoration: none;
+    color: #5D6366;
+} 
+.footer-section4 div {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;  
+    gap: 10px;  
+}
+.footer-section4-hr { display: none;} 
+
+.copyright-txt{
+    font-family: "Inter", sans-serif;   
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px; 
+    color: #5D6366;
+}
+.span3, .span4{
+    text-decoration: underline;
+    letter-spacing: .4px;
+    color: #5D6366;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;    
+}
+
+ 
+
+  

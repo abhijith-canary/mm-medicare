@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MM Medicare</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="icon" type="image/x-icon" href="media/mmicon.png" class="logo_icon ">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet --> 
+     <!-- Add Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive-media.css" rel="stylesheet">
+</head>
+
+<body> 
+
+    <!-- Navbar Start -->  
+    <nav class="navbar bg-body-tertiary" >
+        <div class="container">
+            <a class="navbar-brand" href="#homePage">
+                <img src="media/Group 237584.png" class="img-fluid logo-img">
+            </a> 
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav justify-content-end" id="navLinks">
+
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#homePage">Home</a></li> 
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="#aboutPage">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#departmentPage">Departments</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicePage">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactPage">Contact</a></li>
+                <li class="navbar-btn-div"><a href="tel:7440000888" class="navbar-btn "><img src="media/contacticonclr.png" alt=""> +91 7440000888</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End --> 
+
+    <!-- Hero Start --> 
+    <div class="collection position-relative overflow-hidden"  id="homePage">
+        <div class="container home-container"> 
+            <div class="d-flex flex-wrap" >
+
+                <div class="col-md-6 home-content"> 
+                    <h3 class="">Welcome to MM Medicare..!</h3>
+                    <h1 class="">Precision Care,<br> Advanced Technology,<br> Your Health First...</h1>
+                    <p>Your trusted partner in health and diagnostics where precision meets innovation.</p>
+                    <button type="submit" class="home-btn">GET FREE CONSULTATION<img src="media/CaretCircleRight (1).png"></button>
+                </div>
+                
+                <div class="col-md-6 home-img-div" > 
+                    <img src="media/Doctor_img.png" alt="collection" class="home-image  "> 
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container-fluid home-layer">
+        <div class="container" >
+            <div class="row home-layer-div">
+                <div class="col-lg-4 home-layer-div2" >
+                    <div class="d-flex" >
+                        <img src="media/footer_img1.png" class="img-fluid home-layer-img">
+                        <div class="home-layer-content">
+                            <h5>70000+</h5> 
+                            <p>Success Stories and Cases</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 home-layer-div2 health">
+                    <div class="d-flex" >
+                        <img src="media/footer_img2.png" class="img-fluid home-layer-img">
+                        <div class="home-layer-content">
+                            <h5>50+</h5> 
+                            <p>Years of Combined Experience</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-4 home-layer-div2 star">
+                    <div class="d-flex" >
+                        <img src="media/footer_img3.png" class="img-fluid home-layer-img">
+                        <div class="home-layer-content">
+                            <h5>5 Star</h5> 
+                            <p>Customer Satisfaction</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End --> 
+
+    <!-- About Start -->
+    <div class="container-fluid" id="aboutPage">
+        <div class="container about-container" >
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img-div" >
+                        <img class="img-fluid about-img" src="media/& Image.png">
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 about-us-content">
+                    <img src="media/about_title.png" class="img-fluid about-title-img">
+                    <h6 class=""><img src="media/headingimgclr.png"><span> About Us</span></h6>
+                    <h1>Welcome to MM Medicare</h1>
+                    <p class="mb-4">
+                        Welcome to MM Medicare, your trusted partner in health and diagnostics where precision meets innovation. Headquartered in Manalur, Thrissur. 
+                        Our well-furnished and fully air-conditioned super speciality clinic is staffed by experienced and specialist doctors, supported by a team of caring professionals.
+                    </p> 
+                    <button type="submit" class="learnMore-btn">Learn More <img src="media/CaretCircleRight.png"></button>  
+                 
+                    <div class="modal modal_multi">
+ 
+                        <div class="modal-content">
+                            <span class="close close_multi">×</span>
+                            <h4 id="welcomeabout-modal">Welcome to MM Medicare</h4>
+                            <p id="modalsentence">Welcome to MM Medicare, your trusted partner in health and diagnostics where  precision meets innovation. Headquartered in Manalur, Thrissur. Our well-furnished  and fully air-conditioned super speciality clinic is staffed by experienced and specialist  doctors, supported by a team of caring professionals. We provide a comprehensive range of services, including observation, nebulization, ECG, suturing, and minor
+                                procedures, all designed to meet the highest standards of patient care.
+                            </p>
+                            <p id="modalsentence">Our Clinic is equipped with state-of-the-art French-made equipment, ensuring the
+                                highest standards of accuracy and reliability in diagnostics. Whether it's routine blood
+                                tests, advanced genetic screenings, or specialized diagnostic procedures, our cuttingedge
+                                technology guarantees precise results you can trust. Our commitment to
+                                precision and accuracy ensures that you receive the most reliable results, empowering
+                                you and your healthcare providers to make informed decisions. With the commitment
+                                to excellence and a focus on patient care, we strive to deliver timely and accurate
+                                diagnostics to support your health and well-being. Experience the future of medical
+                                testing with mm medicare, where technology and expertise come together for your
+                                optimal health.
+                            </p>
+                            <p id="modalsentence">
+                                At mm medicare, we pride ourselves on our network of branches strategically located
+                                in Karuvanthala, Arimboor, Anthikkad, Kanjany, and Amala Nagar. This extensive
+                                reach allows us to serve the community efficiently, offering a wide range of diagnostic
+                                services that cater to the diverse needs of our patients.
+                            </p>
+                            <p id="modalsentence">
+                                Our team of highly trained professionals is devoted to delivering exceptional care and
+                                service. Whether it's routine screenings or specialized tests, we are here to support
+                                your health journey with expertise and compassion.
+                            </p>
+                            <p id="modalsentence">
+                                Experience the difference with mm medicare, where cutting-edge technology and a
+                                patient-centric approach come together to provide unparalleled diagnostic services.
+                                Your health is our priority....
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid overflow-hidden" style="background-color: #32B3A7;">
+        <div class="container our-mission-container">
+            <div class="row g-5 align-items-center">                
+                <div class="col-lg-6 about-us-content our-mission-content">
+                    <h1 class="text-white"><img src="media/headingimgwh.png"> <span> Our Mission</span></h1>
+                    <p class="text-white">
+                        At MM Medicare, our mission is to deliver superior health care with integrity and empathy. We are committing to exceeding patient expectations through personalized care, 
+                        advanced technology and continuous improvement. Established with a steadfast dedicatoin to excellence, MM Medicare has been serving the community with unwavering commitement for many years.
+                    </p> 
+                    <button type="submit" id="btn2" class="mission-learnMore-btn">Learn More <img src="media/CaretCircleRight (1).png"></button>
+                     
+                    <div id="myModal" class="modal"> 
+                        <div class="modal-content">
+                            <span class="close">×</span>
+                            <h4 id="mission-modal">Our Mission</h4>
+                            <p id="modalsentence2">At mm medicare, our mission is to deliver superior healthcare with integrity and 
+                                empathy. We are committed to exceeding patient expectations through personalized 
+                                care, advanced technology, and continuous improvement. Established with a 
+                                steadfast dedication to excellence, mm medicare has been serving the community 
+                                with unwavering commitment for many years. Our team of experienced healthcare 
+                                professionals is devoted to providing comprehensive medical services tailored to meet 
+                                individual needs, utilizing state-of-the-art French-made equipment to ensure the 
+                                highest standards of diagnostic accuracy and reliability. With our head office in 
+                                Manalur, Thrissur, and branches in Karuvanthala, Arimboor, Anthikkad, Kanjany, and 
+                                Amala Nagar, we are strategically positioned to offer accessible and exceptional 
+                                healthcare services across the region
+                            </p>
+                            <p id="modalsentence2">Established with a commitment to excellence, mm medicare has been serving the 
+                                community with dedication and care for number of years. Our team of experienced 
+                                healthcare professionals is dedicated to providing comprehensive medical services 
+                                tailored to meet individual needs.
+                            </p>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="mission-img-div">
+                        <img class="img-fluid our-mission-img" src="media/Mask_group_2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End --> 
+
+    <!-- Our Departments Start -->
+    <div class="container-fluid" id="departmentPage">
+        <div class="container department-container">
+            <div class="department-contents">
+                <h1><img src="media/headingimgclr.png"> <span> Our Departments</span></h1>
+                <p>
+                    At MM Medicare Clinic, our department shines through its unwavering commitment to customer welfare, blending cutting-edge medical expertise with a compassionate touch.
+                    Our dedicated team prioritizes each patient's well-being, delivering personalized care with empathy and efficiency. We seamlessly integrate advanced technology with a 
+                    patient-centric approach, ensuring that every individual receives the highest standard of service and attention. At MM Medicare Clinic, our strength lies in our 
+                    relentless pursuit of excellence, always placing our patients' needs at the heart of everything we do.
+                </p>
+            </div>
+            
+            <div class="row g-4 department-box-container">
+                <div class="col-lg-4 paediatrics">
+                    <div class="department-item flex-column rounded">
+                        <div><img src="media/paediatrics.png"></div>
+                        <h4>Paediatrics</h4>
+                        <p>Nurturing the health and happiness of our youngest patients with comprehensive pediatric care from routine check-ups to specialized treatments  for childhood illnesses.</p>  
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item flex-column  rounded">
+                        <div><img src="media/urology.png"></div>
+                        <h4>Urology</h4>
+                        <p>Pioneering treatments for urinary tract, kidney stones, urinary tract infections, and prostate issues.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item flex-column rounded">
+                        <div><img src="media/orthopaedics.png"></div>
+                        <h4>Orthopaedics</h4>
+                        <p>Restoring mobility and vitality through advanced orthopaedic care, including treatments for fractures, joint disorders.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item flex-column rounded">
+                        <div><img src="media/dermatology.png"></div>
+                        <h4>Dermatology</h4>
+                        <p>Personalized solutions for healthy, radiant skin, addressing a wide range of skin conditions, from acne and eczema.</p>  
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item flex-column rounded">
+                        <div><img src="media/gynaecology.png"></div>
+                        <h4>Gynaecology</h4>
+                        <p>Comprehensive care for women's health and well-being, providing services from routine gynaecological exams to treatments for reproductive health  issues.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item flex-column rounded">
+                        <div><img src="media/general_medicine.png"></div>
+                        <h4>General Medicine</h4>
+                        <p>Your first line of defence for everyday health concerns, offering expert diagnosis and treatment for a wide range of common and complex  medical conditions.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item flex-column rounded">
+                        <div><img src="media/general_suregry.png"></div>
+                        <h4>General Surgery</h4>
+                        <p>Expert surgical solutions with compassion and precision, including minimally invasive procedures.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item d-flex flex-column rounded">
+                        <div><img src="media/nephrology.png" ></div>
+                        <h4>Nephrology</h4>
+                        <p>Dedicated care for kidney health and renal conditions, offering  advanced treatments for chronic kidney disease.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item flex-column rounded" >
+                        <div><img src="media/ent.png"></div>
+                        <h4>ENT</h4>
+                        <p>Cutting-edge treatments for ear, nose, and throat disorders, from hearing  loss and sinusitis to voice and swallowing disorders.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item d-flex flex-column  rounded">
+                        <div><img src="media/pulmonology.png" ></div>
+                        <h4>Pulmonology</h4>
+                        <p> Respiratory care designed to help you breathe easier, including treatments for asthma, COPD, and other lung conditions</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item d-flex flex-column  rounded">
+                        <div><img src="media/cardiology.png" ></div>
+                        <h4>Cardiology</h4>
+                        <p>Heart health solutions that prioritize longevity and vitality, offering  comprehensive cardiac care from diagnostics test like echocardiography, ECG,  Troponin I</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item d-flex flex-column  rounded">
+                        <div><img src="media/dental.png" ></div>
+                        <h4>Dental</h4>
+                        <p>Precision dental care for a confident smile, providing services from  routine cleanings to complex dental procedures.</p> 
+                    </div>
+                </div>
+                <div class="col-lg-4 department-box">
+                    <div class="department-item d-flex flex-column  rounded">
+                        <div><img src="media/Ophthalmology.png" ></div>
+                        <h4>Ophthalmology</h4>
+                        <p>Visionary eye care solutions for optimal sight, offering treatments  for a range of eye conditions including cataracts and glaucoma. </p> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+    <!--Our Departments End -->
+
+    <!-- Facility Section Start --> 
+    <div class="container-fluid overflow-hidden" id="servicePage" style="background-image: linear-gradient(to right, #32B3A7, #F8C6A1);">
+        <div class="container facility-container"> 
+
+            <div class="Facility-content">
+                <h1><img src="media/headingimgwh.png"> <span> Facilities</span></h1>
+                <p>Experience Our modern facilities equipped with advanced medical technology, ensuring accurate diagnostics and confortable patient care.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 facility-main">
+                    <div class="facility-img-div">
+                        <img class="img-fluid facility-img" src="media/facilty_img1.png">
+                    </div>
+                </div>
+                <div class="col-lg-6 facilty-right-content">
+                    <label class="border-0" id="labelfaci">X-Ray</label>
+                    <label class="border-0" id="labelfaci2">Ultrasound Scanning</label>
+                    <label class="border-0" id="labelfaci2">Echo Cardiogram</label>
+                    <label class="border-0" id="labelfaci3">Eye Clinic<p id="faci3"><img src="media/Round.png"> Computerized Vision Test</p><p id="faci3_1"><img src="media/Round.png"> Optical-Extensive collection of branded frames & lenses</p></label>
+                    <label class="border-0" id="labelfaci4">Wheel chair facilities for the patient and physically challenged</label>
+                    <label class="border-0" id="labelfaci2">Dental check-ups and cleanings</label>
+                    <label class="border-0" id="labelfaci7">Clinic offers comperhensive Physiotherapy services</label>
+                    <label class="border-0" id="labelfaci5">Our clinic provides a full range of pharmacy services, including prescription filling, medical counselling, and health management support.</label>
+                    <label class="border-0" id="labelfaci6">we do offer observation services to monitor and assess patients conditions for accurate diagnosis and effective trearment planning.</label>    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Facility End --> 
+
+    <!-- Healthcare Packages Start -->
+    <div class="container-fluid overflow-hidden">
+        <div class="container healthcare-container">
+            <div class="row "> 
+                <div class="col-lg-6">
+                    <div class="healthpack">
+                        <img src="media/headingimgclr.png"><h1 class="d-inline-block">Healthcare Packages</h1>
+                        <h5>Leverage our curated healthcare packages designed to empower proactive health management</h5>
+                        <p class="mb-4" id="healthp2">At MM Medicare Clinic, our health packages stand out for their exceptional balance of comprehensive care and affordability, designed with your well-being in mind. We offer tailored packages that address a wide range of medical needs while ensuring that high-quality care remains accessible to all. By combining advanced medical services with cost-effective solutions, we make it easy for you to prioritize your health without financial strain. Our commitment to customer welfare means that every package is crafted to deliver both value and peace of mind, empowering you to stay healthy and thrive.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 hover-section-div" >
+                    <div class="hover-section ">
+                        <div class="hover-div citizen-health text-center">
+                            <div class="hover-content">
+                                <img src="media/hexagon.png" class="center-hover">
+                                <p class="citizen-health-text">Dedicated care to ensure a vibrant and active lifestyle</p>
+                            </div>
+                            <div class="senior-citizen citizen-diabetes" >
+                                <img src="media/Senior Citizen Health.png" alt="Hexagon Shape">
+                                <p>Senior Citizen Health Package</p>
+                            </div>
+                        </div>
+
+                        <div class="hover-div home-collection" >
+                            <div class="hover-content">
+                                <img src="media/hexagon.png" class="center-hover">
+                                <p class="home-collection-text">Where healthcare meets convenience samples collected at your doorstep, results delivered promptly via WhatsApp</p>
+                            </div>
+                            <div class="senior-citizen home-cardiac-cancer home-collection-hover">
+                                <img src="media/Medical Home.png" alt="Hexagon Shape">
+                                <p>Home Collection</p>
+                            </div>
+                        </div>
+
+                        <div class="hover-div women-health">
+                            <div class="hover-content">
+                                <img src="media/hexagon.png" class="center-hover">
+                                <p class="women-health-text">comperhensive screenings trailored to women's unique health needs.</p>
+                            </div>
+                            <div class="senior-citizen">
+                                <img src="media/Women's Health.png" alt="Hexagon Shape">
+                                <p>Women's Health Check-up</p>
+                            </div>
+                        </div>
+
+                        <div class="hover-div cardiac-care">
+                            <div class="hover-content">
+                                <img src="media/hexagon.png" class="center-hover">
+                                <p class="cardiac-care-text">Cardiac Care Package: Protect your heart with comprehensive diagnostic tests  and expert consultations.</p>
+                            </div>
+                            <div class="senior-citizen home-cardiac-cancer">
+                                <img src="media/Cardiac Care.png" alt="Hexagon Shape">
+                                <p>Cardiac Care Package</p>
+                            </div>
+                        </div>
+
+                        <div class="hover-div diabetes-management">
+                            <div class="hover-content">
+                                <img src="media/hexagon.png" class="center-hover">
+                                <p class="diabetes-management-text">Personalized plans to keep blood sugar levels in check.</p>
+                            </div>
+                            <div class="senior-citizen citizen-diabetes">
+                                <img src="media/Diabetes.png" alt="Hexagon Shape">
+                                <p>Diabetes Management</p>
+                            </div>
+                        </div>
+
+                        <div class="hover-div special-health">
+                            <div class="hover-content">
+                                <img src="media/hexagon.png" class="center-hover">
+                                <p class="special-health-text">comperhensive assessments designed to safeguard your well-being</p>
+                            </div>
+                            <div class="senior-citizen">
+                                <img src="media/Special Health.png" alt="Hexagon Shape">
+                                <p>Special Health Check Packages</p>
+                            </div>
+                        </div>
+
+                        <div class="hover-div cancer-marker">
+                            <div class="hover-content">
+                                <img src="media/hexagon.png" class="center-hover">
+                                <p  class="cancer-marker-text">The hospital has facilities for conducting cancer marker tests to assist in diagnosing and monitoring cancer</p>
+                            </div>
+                            <div class="senior-citizen home-cardiac-cancer">
+                                <img src="media/Cancer marker.png" alt="Hexagon Shape">
+                                <p>Cancer marker test</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Healthcare Packages End -->
+
+    <!-- Service Highlights Start --> 
+    <section class="container-fluid overflow-hidden" style="background-color: #ecedf0;">
+        <div class="container highlight-container">
+            <div class="service-header">
+                <h1><img src="media/headingimgclr.png"> <span> Service Highlights</span></h1>
+            </div>
+
+            <div class="row" style="padding: 0px 5px 0px 5px;">
+                
+                <div class="col-md-3 highlight-box">
+                    <div class=" ">
+                        <img src="media/servimg1.png" class=" img-fluid ">
+                        <div class="highlight-items">
+                            <h4>Doctor Consultation</h4>
+                            <p>Book a consultation with our experienced doctors for comprehensive and personalized medical care tailored to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 highlight-box">
+                    <div class=" ">
+                        <img src="media/servimg2.png" class=" img-fluid ">
+
+                        <div class="highlight-items">
+                            <h4>Video Consultation</h4>
+                            <p>Experience the convenience of healthcare from the comfort of your home with MM Medicare's video consultation services.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 highlight-box">
+                    <div class=" ">
+                        <img src="media/servimg3.png" class=" img-fluid ">
+
+                        <div class="highlight-items">
+                            <h4>Lab Services</h4>
+                            <p>Quick, reliable, and accurate test result using a fully automated system made in France.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 highlight-box">
+                    <div class=" ">
+                        <img src="media/servimg4.png" class=" img-fluid "> 
+                        <div class="highlight-items">
+                            <h4>Home Collection Service</h4>
+                            <p>Healthcare experts visit your doorstep for examinations and sample collection, with results delivered promptly via WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Service Highlights End -->
+
+
+    <!-- Contact Us Start -->
+    <div class="container-fluid contact-section" id="contactPage">
+        <div class="container"> 
+            <div class="col-md-6">
+                <h3><img src="media/headingimgwh.png"><span> Contact Us</span></h3>
+                <h1>Take the first step towards superior healthcare.</h1>
+                <p>Contact MM Medicare today to schedule your appointment or inquire about our services. We're here to serve you with dedication and compassion.</p>
+                <div class="contactbtn-div"> 
+                    <a href="tel:7440000888" class="contact-btn"><img src="media/contact_iconbtn.png" style="margin-top: -5px;"> Contact Us</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- Contact Us End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-white footer  ">
+        <div class="container footer-container">
+            <div class="row g-5">
+                <a href="index.html" class="d-inline-block" >
+                   <img src="media/Group 237584.png" class="contact-logo">
+                </a>
+                <div class="col-md-6 col-lg-3 footer-section"> 
+                    <h6 class="text-white">Head Office</h6> 
+                    <hr>
+                    <p>MM Medicare center, Thrissur, Manalur, Kerala 680617 </p>
+                    <div class="row">
+                        <p><img src="media/contacticonclr.png" class="me-3" style="margin-top: -5px;">0487 299 6545</p>
+                        <p style="margin-top: -10px;"><img src="media/contacticonclr.png" class="me-3" style="margin-top: -3px;">7440 000 888</p>
+                    </div>
+                    <div class="d-flex" style="gap: 20px;"> 
+                        <a class="btn btn-outline-light btn-social" href=""> <img src="media/twitter.png" style="width: 15px;"></a> 
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=100079303360909&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a> 
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mmmedicare.in?igsh=MTJiNG5jaTExaTBheQ=="><i class="fab fa-instagram"></i></a> 
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 footer-section2" >
+                    <h6 class="text-white">Branches</h6>
+                    <hr>
+                    <p>Karuvanthala <img src="media/contacticonclr.png" class="me-3 img1" style="margin-top: -5px;">+91 7736955546</p>
+                    <p>Arimboor <img src="media/contacticonclr.png" class="me-3 img2" style="margin-top: -5px;">+91 7736955549</p>
+                    <p>Anthikad <img src="media/contacticonclr.png" class="me-3 img3" style="margin-top: -5px;">+91 7736955548</p>
+                    <div class="d-flex pt-2 working-hours">
+                        <p>Working Hours : <span class="span1">Monday to Sunday, 6:00 am to 3:00 pm <br><span class="span2">( Kanjani, Karuvanthala, Anthikad, Arimboor )</span></span></p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 footer-section3">  
+                    <hr>
+                    <p>Kanjany <img src="media/contacticonclr.png" class="me-3 img1" style="margin-top: -5px;">+91 7736955547</p>
+                    <p>Amala Nagar <img src="media/contacticonclr.png" class="me-3 img2" style="margin-top: -5px;">+91 9293444000</p>
+                </div>
+
+                <div class="col-md-6 col-lg-2 footer-section4">
+                    <h6 class="text-white ">Company</h6>
+                    <hr class="footer-section4-hr">
+                    <div class="">
+                        <a href="#aboutPage" class="company-menu">About Us</a> 
+                        <a href="#departmentPage" class="company-menu">Departments</a> 
+                        <a href="#servicePage" class="company-menu">Services</a> 
+                        <a href="#contactPage" class="company-menu">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                <div class="row ">
+                    <div class="col-md-6 text-center text-md-start copyright-txt">
+                        &copy; 2024 MM Medicals. All rights reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p><span class="span3">Terms Of Service</span> <span class="span4"> Privacy Policy</span></p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+ 
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="lib/easing/easing.min.js"></script> 
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
