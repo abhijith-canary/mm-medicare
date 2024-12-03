@@ -208,9 +208,9 @@
 
     .home-layer-div2{ width: auto; } .home-layer-img{ width:50px; height: 100%;}
 
-    .home-layer-content{ padding: 0 5px;} .home-layer-content h5{ font-size: 20px; }
+    .home-layer-content{ padding: 0 5px; width: 150px;} .home-layer-content h5{ font-size: 20px; }
 
-    .star{ padding-left: 10px; } .health{padding-left: 10px; }
+    .star{ padding-left: 30px; width: 190px; margin-left: 40px; } .health{ padding-left: 10px; margin-left: 40px; }
 
     .home-layer-content p{
         font-size: 15px;
