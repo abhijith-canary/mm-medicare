@@ -1,4 +1,11 @@
+ // Redirect to #homePage on page reload
+window.addEventListener('load', function () {
+	window.scrollTo(0, 0);
 
+    if (window.location.hash) { 
+		history.replaceState(null, '', window.location.pathname);
+    }
+}); 
  
 // Toggle the menu open/close
 function toggleMenu() {
@@ -7,9 +14,8 @@ function toggleMenu() {
 
     navLinks.classList.toggle("active");
     hamburger.classList.toggle("open");
-}
+} 
 
-// Close the navigation menu when a link is clicked
 function closeMenu() {
     const navLinks = document.getElementById("navLinks");
     const hamburger = document.getElementById("hamburger");
@@ -21,9 +27,7 @@ function closeMenu() {
 
 document.querySelectorAll('#navLinks .nav-link').forEach(link => {
     link.addEventListener('click', closeMenu);
-});
-
-
+}); 
 
 // Js code to open and close the modal
 var modalparent = document.getElementsByClassName("modal_multi");
