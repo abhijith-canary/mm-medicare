@@ -100,6 +100,11 @@
 
     .navbar-btn{ font-size: 15px; padding: 8px 5px; }   
 } 
+@media (max-width:1199px) {   
+    
+    .navbar .nav-item .nav-link { margin-right: 25px; } .logo-img{ width: 200px;} 
+}
+ 
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 38px;
